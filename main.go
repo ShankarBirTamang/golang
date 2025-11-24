@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"hello/exercise"
+)
 
 func main() {
 	fmt.Println("Hello, World!")
@@ -23,5 +26,7 @@ func main() {
 	// anonymousStruct()
 	// passByValue()
 	// passByReference()
-	methodReceiverExample()
+	// methodReceiverExample()
+
+	exercise.Exercise()
 }
