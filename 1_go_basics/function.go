@@ -1,8 +1,8 @@
-package main
+package go_basics
 
 import "fmt"
 
-func function() {
+func Function() {
 	q, r := divide(10, 3)
 	fmt.Printf("Quotient: %d, Remainder: %d\n", q, r)
 	sum, product := calculateSumAndProduct(10, 20)
@@ -22,7 +22,7 @@ func calculateSumAndProduct(a, b int) (int, int) {
 }
 
 // 1. Anonymous function
-func outerFunction() {
+func OuterFunction() {
 	innerFunction := func() {
 		fmt.Println("This is an anonymous function and it is called inside the outer function")
 	}
@@ -31,7 +31,7 @@ func outerFunction() {
 }
 
 // 2 inline anonymous function
-func anonymousFunction() {
+func AnonymousFunction() {
 	func() {
 		fmt.Println("This is an inline anonymous function and it is called inside the anonymous function")
 	}()
@@ -40,7 +40,7 @@ func anonymousFunction() {
 }
 
 // 3 Anonymous function with parameters and return value
-func anonymousFuncWithParameters() {
+func AnonymousFuncWithParameters() {
 	add := func(a, b int) int {
 		return a + b
 	}
@@ -54,7 +54,7 @@ func process(myFn func(int) int) {
 	fmt.Println("Result of the callback function is", result)
 }
 
-func callbackFunction() {
+func CallbackFunction() {
 	process(func(x int) int {
 		return x * 2
 	})

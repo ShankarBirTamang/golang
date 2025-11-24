@@ -1,5 +1,5 @@
 // structs are user defined types that allow you to store a collection of values of different types
-package main
+package control_structure
 
 import "fmt"
 
@@ -15,7 +15,7 @@ type Address struct {
 	State  string
 }
 
-func structs() {
+func Structs() {
 	//nested struct
 	person := Person{
 		Name:    "John",
@@ -32,7 +32,7 @@ func structs() {
 }
 
 // anonymous struct
-func anonymousStruct() {
+func AnonymousStruct() {
 	person := struct {
 		Name    string
 		Age     int
@@ -65,7 +65,7 @@ This means:
 - Changing it does not affect the original struct outside
 */
 
-func passByValue() {
+func PassByValue() {
 	updateAge := func(p Person) {
 		p.Age = 50 // changes only the copy
 	}
@@ -77,7 +77,7 @@ func passByValue() {
 }
 
 // If you want reference behavior → pass a pointer to the struct
-func passByReference() {
+func PassByReference() {
 	updateAge := func(p *Person) {
 		p.Age = 50 // changes the original struct
 	}

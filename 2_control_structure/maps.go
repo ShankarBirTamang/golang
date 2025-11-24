@@ -1,8 +1,8 @@
-package main
+package control_structure
 
 import "fmt"
 
-func maps() {
+func Maps() {
 	person := map[string]int{
 		"John": 20,
 		"Jane": 21,

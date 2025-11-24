@@ -1,8 +1,8 @@
-package main
+package go_basics
 
 import "fmt"
 
-func closure() {
+func Closure() {
 	c := counter()
 	fmt.Println(c())
 	fmt.Println(c())
@@ -16,7 +16,7 @@ func closure() {
 	fmt.Println(tripler(5))
 
 	//closure modifying variables outside its scope
-	modifyVariable()
+	ModifyVariable()
 }
 
 // simple closure
@@ -37,7 +37,7 @@ func multiplier(factor int) func(int) int {
 
 // closure modifying variables outside its scope
 // anonymous function can access and modify variables declared in the outer scope
-func modifyVariable() {
+func ModifyVariable() {
 	x := 10
 	increment := func() {
 		x++

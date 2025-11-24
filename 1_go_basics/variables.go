@@ -1,12 +1,12 @@
-package main
+package go_basics
 
 import "fmt"
 
-func variables() {
+func Variables() {
 	y := 10
 	fmt.Println(y)
 	fmt.Println(&y)
-	fmt.Println(*&y)
+	// fmt.Println(*&y)
 	x := &y
 	fmt.Println(x)
 	fmt.Println(*x)

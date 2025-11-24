@@ -1,4 +1,4 @@
-package main
+package control_structure
 
 import "fmt"
 
@@ -32,7 +32,7 @@ func (p *Person) ModifyName() {
 //- p acts like the variable representing that Person
 //- This tells Go: This method belongs to the Person struct
 
-func methodReceiverExample() {
+func MethodReceiverExample() {
 	person := Person{}
 	person.Name = "Sankar"
 	fmt.Printf("Person name before modification: %s\n", person.Name)

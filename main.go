@@ -2,31 +2,33 @@ package main
 
 import (
 	"fmt"
-	"hello/exercise"
+	"hello/2_control_structure/exercise"
+	// "hello/2_control_structure"
+	// "hello/1_go_basics"
 )
 
 func main() {
 	fmt.Println("Hello, World!")
 
-	// variables()
+	// go_basics.Variables()
 
-	// function()
-	// outerFunction()
-	// anonymousFunction()
-	// anonymousFuncWithParameters()
-	// callbackFunction()
+	// go_basics.Function()
+	// go_basics.OuterFunction()
+	// go_basics.AnonymousFunction()
+	// go_basics.AnonymousFuncWithParameters()
+	// go_basics.CallbackFunction()
 
-	// closure()
+	// go_basics.Closure()
 
-	// arrays()
+	// control_structure.Arrays()
 
-	// maps()
+	// control_structure.Maps()
 
-	// structs()
-	// anonymousStruct()
-	// passByValue()
-	// passByReference()
-	// methodReceiverExample()
+	// control_structure.Structs()
+	// control_structure.AnonymousStruct()
+	// control_structure.PassByValue()
+	// control_structure.PassByReference()
+	// control_structure.MethodReceiverExample()
 
 	exercise.Exercise()
 }

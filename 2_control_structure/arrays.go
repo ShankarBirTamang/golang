@@ -1,8 +1,8 @@
-package main
+package control_structure
 
 import "fmt"
 
-func arrays() {
+func Arrays() {
 	numbers := [5]int{1, 2, 3, 4, 5}
 	fmt.Println(numbers)
 	fmt.Println("thisis the last number", numbers[len(numbers)-1])
